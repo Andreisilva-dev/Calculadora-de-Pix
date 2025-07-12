@@ -1,0 +1,68 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #090e21;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  background-color: #1e1e32;
+  gap: 20px;
+  border-radius: 8px;
+
+}
+
+h1 {
+  font-size: 30px;
+  text-align: center;
+}
+label {
+  font-size: 20px;
+}
+input {
+  padding: 10px;
+}
+
+.btns {
+  display: flex;
+  gap: 20px;
+}
+
+.btnCalcular {
+  background-color: rgb(218, 26, 26);
+  text-transform: uppercase;
+  padding: 10px;
+  border: none;
+  width: 100px;
+  font-weight: bold;
+}
+
+.btnCalcular:hover {
+  cursor: pointer;
+  background-color: rgb(169, 34, 34);
+}
+
+.btnLimpar {
+  cursor: pointer;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 10px;
+  border: none;
+  width: 100px;
+}
+
+.diferencaTotal {
+    padding: 10px;
+}
