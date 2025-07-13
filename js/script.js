@@ -25,12 +25,13 @@ function limpar() {
   inputDiferenca.value = "";
   textDiferenca.textContent = `diferença total:`;
   arrayTotal = [];
-  location.reload()
+  location.reload();
 }
 
 // criação das tabelas de preço
 let tabela = document.querySelector(".table");
-let ol = document.createElement("ol");
+// let ol = document.createElement("ol");
+let ol = document.querySelector("ol");
 
 btnCalcular.addEventListener("click", function () {
   // armazena a diferença
@@ -64,3 +65,18 @@ btnLimpar.addEventListener("click", limpar);
 function formatarValor(valor) {
   return valor.toLocaleString("pt-BR", { style: "currency", currency: "BRL" });
 }
+
+// funcao de gerar PDF
+let btnPDF = document.querySelector(".btnGerarPdf");
+btnPDF.addEventListener("click", function () {
+  let conteudo = document.querySelector(".table");
+
+  const options = {
+    margin: [10, 10, 10, 10],
+    filename: "arquivo.pdf",
+    html2canvas: { scale: 2 },
+    jsPDF: { unit: "mm", format: "a4", orientation: "portrait" },
+  };
+
+  html2pdf().set(options).from(conteudo).save()
+});
