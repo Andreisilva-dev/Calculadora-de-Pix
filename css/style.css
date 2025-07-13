@@ -5,8 +5,8 @@
 }
 
 body {
-  background-color: #090e21;
-  color: white;
+  background-color: #928F8A;
+  color: black;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -18,7 +18,7 @@ body {
   display: flex;
   flex-direction: column;
   padding: 20px;
-  background-color: #1e1e32;
+  background-color: #6D4D38;
   gap: 20px;
   border-radius: 8px;
 }
@@ -36,7 +36,9 @@ input {
 
 .btns {
   display: flex;
+  justify-content: center;
   gap: 20px;
+  align-items: center;
 }
 
 .btnCalcular {
@@ -62,6 +64,15 @@ input {
   width: 100px;
 }
 
+button {
+  cursor: pointer;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 10px;
+  border: none;
+  width: 100px;
+}
+
 .btnLimpar:hover {
   cursor: pointer;
   background-color: rgba(255, 255, 255, 0.603);
@@ -71,3 +82,7 @@ input {
   padding: 10px;
 }
 
+.table {
+  text-align: center;
+  color: black;
+}
