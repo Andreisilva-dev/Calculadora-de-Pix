@@ -5,7 +5,7 @@
 }
 
 body {
-  background-color: #928F8A;
+  background-color: #3757ca;
   color: black;
   display: flex;
   flex-direction: column;
@@ -18,7 +18,7 @@ body {
   display: flex;
   flex-direction: column;
   padding: 20px;
-  background-color: #6D4D38;
+  background-color: #429bae;
   gap: 20px;
   border-radius: 8px;
 }
@@ -85,4 +85,8 @@ button {
 .table {
   text-align: center;
   color: black;
+}
+
+input {
+  border-radius: 0.5rem;
 }
