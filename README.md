@@ -32,12 +32,9 @@ Detectar automaticamente qual estabelecimento aceita PIX e qual não aceita foi 
 ### Desafio 2: Geração do PDF com Formatação Correta
 A geração do PDF com todos os detalhes das compras em um formato legível e organizado foi outro obstáculo. Utilizamos a biblioteca **pdf-lib** para manipular e gerar o PDF. Ajustes nas margens e tabelas foram feitos manualmente para garantir que o arquivo fosse limpo e bem formatado.
 
-### Desafio 3: Integração com Diferentes Sistemas de Pagamento
-Alguns estabelecimentos utilizam diferentes plataformas para o processamento de pagamento via PIX. Desenvolver uma interface que pudesse se comunicar com essas diferentes plataformas foi um desafio técnico significativo, mas conseguimos integrá-las por meio de APIs específicas.
 
 ## 4. Decisões Técnicas e Seus Trade-offs
 
-- **Uso de Node.js**: Optamos por usar **Node.js** por ser uma plataforma eficiente para manipulação de dados e integração com APIs externas. A escolha foi importante por facilitar a comunicação com o banco de dados e permitir uma arquitetura escalável. O trade-off foi a necessidade de conhecimentos específicos sobre o ambiente Node.js e suas dependências.
   
 - **Biblioteca pdf-lib para geração de PDF**: A escolha dessa biblioteca foi devido à sua flexibilidade e capacidade de gerar PDFs dinâmicos. Embora existam alternativas como o **jsPDF**, o pdf-lib foi mais adequado devido à sua facilidade de personalização e integração com o restante do sistema. O trade-off aqui é que o pdf-lib tem uma curva de aprendizado um pouco maior.
 
